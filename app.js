@@ -1,3 +1,5 @@
+var port = process.env.PORT || 8080;
+
 var express = require('express');
 var app = express();
 
@@ -5,6 +7,5 @@ app.get('/', function(req, res){
   res.send('Hello World');
 });
 
-var server = app.listen(80, function() {
-    console.log('Listening on port %d', server.address().port);
-});
+app.listen(port);
+console.log("Todo Server started! Open http://localhost:" + port + " in your web browser to test locally.");
