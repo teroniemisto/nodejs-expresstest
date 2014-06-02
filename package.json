@@ -6,6 +6,7 @@
   "scripts": {
   	"start": "node app.js"
   },
+  "engine": "node 0.10.28"
   "dependencies": {
     "express": "4.4.0"
   }
